@@ -19,142 +19,245 @@
   <body>
     <!-- Nav bar -->
     <header>
-      <nav>
-        <h1 class="logo"><a href = "#">Isaac Tsang</a></h1>
-        <ul class="nav-links">
-          <li class="hvr-underline-from-center"><a href="#">Home</a></li>
-          <li class="hvr-underline-from-center"><a href="#">About</a></li>
-          <li class="hvr-underline-from-center"><a href="#">Projects</a></li>
-          <li class="hvr-underline-from-center"><a href="#">Contact</a></li>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="#Home_page" class="nav-link">
+              <span class="link-text logo-text">Isaac Tsang</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="angle-double-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+              >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                    class="fa-secondary"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                    class="fa-primary"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <a href="#Home_page" class = "nav-link">
+            <i class = "fas fa-home"></i>
+            <span class = "link-text">Home</span>
+          </a>
+          <a href="#about" class = "nav-link">
+            <i class = "fas fa-info-circle"></i>
+            <span class = "link-text">About me</span>
+          </a>
+          <a href="#projects" class = "nav-link">
+            <i class = "fas fa-code"></i>
+            <span class = "link-text">Projects</span>
+          </a>
+          <a href="#contact" class = "nav-link">
+            <i class = "fas fa-address-book"></i>
+            <span class = "link-text">Contact Me</span>
+          </a>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </nav>
     </header>
-    <!-- Home page -->
-    <div class="Home_page">
-      <div class="info">
-        <div class="text slide-in from-left">
-          <h1>Isaac Tsang</h1><br>
-          <h1>Candidate for Bachelors of Accounting and Financial Management</h1>
-          <br>
-          <a href="https://www.linkedin.com/in/isaac-tsang-870a6919b" class="fa fa-linkedin hvr-grow"></a>
-          <a href="https://github.com/isaacshun" class="fa fa-github hvr-grow"></a>
-          <a href="https://www.linkedin.com/in/isaac-tsang-870a6919b" class="fas fa-file-alt hvr-grow"></a>
-          <br><br>
-          <i class = "fas fa-envelope"></i><h4>isaacshun@yahoo.com</h4><br>
-          <i class = "fas fa-phone"></i><h4>+1 (647)-202-1289</h4><br>
-          <i class = "fas fa-map-marker-alt"></i><h4>Markham, ON, Canada</h4>
-        </div>
-        <div class="photo slide-in from-right">
-          <img src = "Isaac.jpg">
+    <main><!-- Home page -->
+      <div class="Home_page" id = "Home_page">
+        <div class="info">
+          <div class="text slide-in from-left">
+            <h1>Isaac Tsang</h1><br>
+            <h1>Candidate for Bachelors of Accounting and Financial Management</h1>
+            <br>
+            <a href="https://www.linkedin.com/in/isaac-tsang-870a6919b" class="fab fa-linkedin hvr-grow"></a>
+            <a href="https://github.com/isaacshun" class="fa fa-github hvr-grow"></a>
+            <a href="https://www.linkedin.com/in/isaac-tsang-870a6919b" class="fas fa-file-alt hvr-grow"></a>
+            <br><br>
+            <i class = "fas fa-envelope"></i><h4>isaacshun@yahoo.com</h4><br>
+            <i class = "fas fa-phone"></i><h4>+1 (647)-202-1289</h4><br>
+            <i class = "fas fa-map-marker-alt"></i><h4>Markham, ON, Canada</h4>
+          </div>
+          <div class="photo slide-in from-right">
+            <img src = "img/Isaac.jpg">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="about">
-      <h1>About Me</h1>
-      <div class="swiper-container slide-in from-right">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="sliderText">
-                <h3>Born in 2002. Came to Canada since 12. Aspiring Finance Professional</h3>
-              </div>
-              <div class="content1">
-                <p>Hi! My name is Isaac, and I am a student at the University of Waterloo's Accounting and Financial Management Program. I am an investor, data scientist, an aspiring CPA, and an aspiring CFA.</p>
-                <br>
-                <p>I have been interested in the stock markets ever since I was young. It is fascinating to me how the economy and consumers move the markets (and the charts look cool to me). I also love the idea that we can make decisions with computers and data.</p>
-                <br>
-                <p>Whenever I have free time, I would enjoy a few episodes of anime and listen to music. Some of my favourate music genres are classical period pieces, romantic period pieces (Moonlight Sonata anyone?), Jazz, Jazzhop, Rap, EDM, and Lo-Fi.</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="sliderText">
-                <h3>Certificates</h3>
-              </div>
-              <div class="content2">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum aspernatur asperiores, quo fugit commodi sit recusandae quidem! Repellat nam animi nobis consectetur reprehenderit nisi saepe, esse officia incidunt sit.</p>
+      <div class="about" id = "about">
+        <h1>About Me</h1>
+        <div class="swiper-container fade-in">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <h3>Born in 2002. Came to Canada since 12. Aspiring Finance Professional</h3>
+                </div>
+                <div class="content1">
+                  <p>Hi! My name is Isaac, and I am a student at the University of Waterloo's Accounting and Financial Management Program. I am an investor, data scientist, an aspiring CPA, and an aspiring CFA.</p>
+                  <br>
+                  <p>I have been interested in the stock markets ever since I was young. It is fascinating to me how the economy and consumers move the markets (and the charts look cool to me). I also love the idea that we can make decisions with computers and data.</p>
+                  <br>
+                  <p>Whenever I have free time, I would enjoy a few episodes of anime and listen to music. Some of my favourate music genres are classical period pieces, romantic period pieces (Moonlight Sonata anyone?), Jazz, Jazzhop, Rap, EDM, and Lo-Fi.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="sliderText">
-                <h3>Programming Languages</h3>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <h3>Certificates</h3>
+                </div>
+                <div class="content2">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum aspernatur asperiores, quo fugit commodi sit recusandae quidem! Repellat nam animi nobis consectetur reprehenderit nisi saepe, esse officia incidunt sit.</p>
+                </div>
               </div>
-              <div class="content3">
-                <div class="language">
-                  <div class="languages">
-                    <img src = 'Python.png' width = 40 height = 40>
-                    <h4>Python</h4>
-                    <p>Python is my first and my favourate programming language. The syntax is very clean and very flexible, from programming to data science to web development. I used it to create an economic data retrieval discord bot using the fredapi and discord.py library</p>
-                  </div>
-                  <div class="languages">
-                    <img src = 'R.png' width = 40 height = 40>
-                    <h4>R</h4>
-                    <p>My go-to language when I want to perform some data cleaning and analysis. </p>
-                  </div>
-                  <div class="languages">
-                    <img src = 'HTMLCSSJS.png' width = 80 height = 40>
-                    <h4>HTML, CSS, JavaScript</h4>
-                    <p>The website that you are currently visiting is created using HTML, CSS, and JavaScript. I used swipe.js to improve the aesthetics of the website.</p>
-                  </div>
-                  <div class="languages">
-                    <img src = 'C++.png' width = 40 height = 40>
-                    <h4>C++</h4>
-                    <p>The language I am currently learning. I love how fast it is, and it helps me understand computers more.</p>
-                  </div>
-                  <div class="circular-lang">
-                    <div class="card">
-                      <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
-                      </div>
-                      <div class="lang-text">Python</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <h3>Programming Languages</h3>
+                </div>
+                <div class="content3">
+                  <div class="language">
+                    <div class="languages">
+                      <img src = 'img/Python.png' width = 40 height = 40>
+                      <h4>Python</h4>
+                      <p>Python is my first and my favourate programming language. The syntax is very clean and very flexible, from programming to data science to web development. I used it to create an economic data retrieval discord bot using the fredapi and discord.py library</p>
                     </div>
-                    <div class="card html">
-                      <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
-                      </div>
-                      <div class="lang-text">HTML & CSS</div>
+                    <div class="languages">
+                      <img src = 'img/R.png' width = 40 height = 40>
+                      <h4>R</h4>
+                      <p>My go-to language when I want to perform some data cleaning and analysis. </p>
                     </div>
-                    <div class="card R">
-                      <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
-                      </div>
-                      <div class="lang-text">R</div>
+                    <div class="languages">
+                      <img src = 'img/HTMLCSSJS.png' width = 80 height = 40>
+                      <h4>HTML, CSS, JavaScript</h4>
+                      <p>The website that you are currently visiting is created using HTML, CSS, and JavaScript. I used swipe.js to improve the aesthetics of the website.</p>
                     </div>
-                    <div class="card js">
-                      <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
-                      </div>
-                      <div class="lang-text">JavaScript</div>
+                    <div class="languages">
+                      <img src = 'img/C++.png' width = 40 height = 40>
+                      <h4>C++</h4>
+                      <p>The language I am currently learning. I love how fast it is, and it helps me understand computers more.</p>
                     </div>
-                    <div class="card cpp">
-                      <div class="circle">
-                        <div class="bar"></div>
-                        <div class="box"><span></span></div>
+                    <div class="circular-lang">
+                      <div class="card">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="lang-text">Python</div>
                       </div>
-                      <div class="lang-text">C++</div>
+                      <div class="card html">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="lang-text">HTML & CSS</div>
+                      </div>
+                      <div class="card R">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="lang-text">R</div>
+                      </div>
+                      <div class="card js">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="lang-text">JavaScript</div>
+                      </div>
+                      <div class="card cpp">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="lang-text">C++</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
+      <div class="projects" id = "projects">
+        <h1>Projects</h1>
+        <article class = "hvr-reveal fade-in">
+          <img src = "img/FRED-DB.JPG" width = auto height = auto>
+          <div class="article-txt">
+            <h3>FRED-DB <i class = "fab fa-python"></i></h3>            
+            <p>FRED-DB is a bot I developed using discord.py and fredapi that allows users to retrive data from the Federal Reserve Economic Data Database and plot it for analysis. I notice that there are finance discord servers where they have to livestream every time they want to discuss economic data and charts with others. So with this, they can just discuss and talk through chat.</p><br>
+            <a href="https://github.com/isaacshun/fred-db"><i class = "fa fa-github"></i> Github Repository</a>
+          </div>
+        </article>
+        <article class = "hvr-reveal fade-in">
+          <img src = "img/DMI.png" width = auto height = auto>
+          <div class="article-txt">
+            <h3>Backtests <i class = "fab fa-python"></i></h3>            
+            <p>As a hobby, I performed a few backtests with Jupyter Notebook to test some strategies. Some of the strategies that I tested include:<br><br>Relative Strength Indicator (RSI)<br>Directional Movement Index (DMI)<br><br> Currently working on Ichimoku Clouds.</p><br>
+            <a href="https://github.com/isaacshun/backtests"><i class = "fa fa-github"></i> Github Repository</a>
+          </div>
+        </article>
+      </div>
+      <section class = "contact-form">
+        <div class="contact" id = "contact">
+          <div class="contactinfo">
+            <div>
+              <h2>Contact Info</h2>
+              <ul class="contactinfo-info">
+                <li>
+                  <span><i class = "fas fa-map-marker-alt"></i><br><br>Markham, ON</span>
+                </li>
+                <li>
+                  <span></span>
+                  <span><i class = "fas fa-envelope"></i><br><br>isaacshun@yahoo.com</span>
+                </li>
+                <li>
+                  <span><i class = "fas fa-phone"></i><br><br>+1 (647)-202-1289</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contactForm" id="contact">
+            <h2>Contact Me</h2>
+            <form id = "contact-form" method = "post" action = "mail.php" class="formBox">
+              <div class="inputBox w50">
+                <input type = "text" name = "fname" class = "form-control" required>
+                <span>First Name</span>
+              </div>
+              <div class="inputBox w50">
+                <input type = "text" name = "lname" class = "form-control" required>
+                <span>Last Name</span>
+              </div>
+              <div class="inputBox w50">
+                <input type = "text" name = "email" class = "form-control" required>
+                <span>Email Address</span>
+              </div>
+              <div class="inputBox w100">
+                <textarea name = "message" class = "form-control" required></textarea>
+                <span>Message</span>
+              </div>
+              <div class="inputBox w100">
+                <input type = "submit" class = "form-control submit" value = "Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <h4 class="name_address">University of <br>Waterloo Financial <br>Technology Club <br><br> 200 University <br>Avenue W,<br> Waterloo, ON, <br>N2L 3G1</h4>
+        <p class="signature"> <br>&copy Designed by Isaac Tsang</p>
+      </div>
+    </main>
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -198,5 +301,7 @@
         value: 0.20,
       });
     </script>
+    <script type="application/javascript">
+    $(document).ready()</script>
   </body>
 </html>
