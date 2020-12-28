@@ -509,7 +509,7 @@ body::-webkit-scrollbar-thumb{
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 2rem;
+  padding: 3.3rem;
   background-color: #efefef;
   text-align: center;
 }
