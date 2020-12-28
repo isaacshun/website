@@ -227,6 +227,7 @@ body::-webkit-scrollbar-thumb{
   width: 25px;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*Github Icon css */
@@ -239,6 +240,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10%;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*Resume Icon css */
@@ -249,6 +251,7 @@ body::-webkit-scrollbar-thumb{
   width: 25px;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .fa-map-marker-alt{
