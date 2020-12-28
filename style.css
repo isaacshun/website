@@ -1,0 +1,392 @@
+@import url('https:fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar and the burger */
+nav{
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  background-color: white;
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+}
+.logo{
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 1500;
+  align-items: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.logo a{
+  list-style: none;
+  text-decoration: none;
+  color: rgba(10, 10, 10);
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color:#333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  padding: 14px;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:#333;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+  }
+  
+  .burger{
+    display: block;
+  }
+}
+
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navlinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+#Homepage
+.Home_page{
+  background-image: url('newyorkmin.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.info{
+  color: white;
+  align-items: center;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('newyorkmin.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo img{
+  width: 200px;
+  height: 200px;
+  border: 15px solid rgba(180, 180, 180, .5);
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1380px){
+  .info{
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo img{
+    order: 1;
+    margin-bottom: 40px;
+  }
+  .text{
+    order: 2;
+  }
+}
+
+.fa{
+  margin-right: 10px;
+}
+
+/*Linkedin Icon css */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 4px;
+  font-size: 30px;
+  width: 25px;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Github Icon css */
+.fa-github {
+  background: black;
+  color: white;
+  padding: 4px;
+  font-size: 30px;
+  width: 25px;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Resume Icon css */
+.fa-file-alt {
+  padding: -1px;
+  color: white;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-map-marker-alt{
+  color: rgb(250, 96, 96);
+}
+
+.fa-phone{
+  color: rgb(47, 255, 92)
+}
+
+/*fade in animation*/
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+/*sliding animation*/
+.from-left{
+  transform: translateX(-50%);
+}
+
+.from-right{
+  transform: translateX(50%);
+}
+
+.from-left, .from-right{
+  transition: opacity 250ms ease-in, 
+  transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear, .from-right.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*about page*/
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url('about-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about h1{
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  width: 60%;
+  height: 700px;
+  margin: 0 auto;
+}
+
+
+.card .content1{
+  widows: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .content2{
+  widows: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card .content3{
+  widows: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card .sliderText{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.card .sliderText h3{
+  color: #fff;
+  font-size: 2em;
+  padding-left: 30px;
+}
+
+/*programming languages*/
+.language{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.languages{
+  font-size: 10px;
+  width: 200px;
+}
+
+/*skill bar*/
+.circular-lang{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  width: 80%;
+}
+.circular-lang .card{
+  width: 20%;
+  background: #fff;
+  height: 120%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.circular-lang .card .circle{
+  position: relative;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.1s;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transform: translate(-50%, -50%) scale(0.8);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span, .circular-lang .card .text{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card .circle .box span{
+  font-size: large;
+  font-weight: 600;
+  transform: translate(-45%, -50%);
+  transition: all 0.1s;
+}
+
+.card .circle:hover .box span{
+  transform: translate(-45%, -50%) scale(1.09);
+}
+
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 505px){
+  .circular-lang{
+    width: 500px;
+  }
+  .circular-lang .card{
+    width: 100%;
+  }
+}
