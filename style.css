@@ -371,6 +371,8 @@ body::-webkit-scrollbar-thumb{
 .languages{
   font-size: 10px;
   width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*skill bar*/
