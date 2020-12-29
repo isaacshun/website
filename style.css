@@ -142,6 +142,13 @@ body::-webkit-scrollbar-thumb{
       color: #fff;
       padding: 30px;
     }
+
+    .bar .progress-line span::before{
+      display: none;
+    }
+    .bar .progress-line span::after{
+      display: none;
+    }
   }
   /* Large screens nav*/
   @media only screen and (min-width: 600px){
