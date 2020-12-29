@@ -1,14 +1,14 @@
 @import url('https:fonts.googleapis.com/css?family=Montserrat:500');
 
 *{
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /* nav bar */
-
 :root{
   font-size: 16px;
   --text-primary: #b6b6b6;
@@ -314,10 +314,14 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
 }
 
+.swiper-container{
+  width: 100%;
+}
+
 .card{
   position: relative;
   background: #fff;
-  width: 60%;
+  width: 80%;
   height: 700px;
   margin: 0 auto;
 }
