@@ -1,8 +1,7 @@
 @import url('https:fonts.googleapis.com/css?family=Montserrat:500');
 
 *{
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -60,7 +59,7 @@
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
   width: 100%;
@@ -298,6 +297,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: center;
   align-items: center;
   min-height: 110vh;
+  height: auto;
   flex-direction: column;
   background-image: url('img/about-background.jpg');
   background-position: center;
@@ -307,7 +307,7 @@ body::-webkit-scrollbar-thumb{
 
 .about h1{
   color: white;
-  padding-bottom: 70px;
+  margin: 20px;
 }
 
 .swiper-wrapper{
@@ -321,8 +321,9 @@ body::-webkit-scrollbar-thumb{
 .card{
   position: relative;
   background: #fff;
-  width: 80%;
-  height: 700px;
+  width: 60%;
+  min-height: 700px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -368,12 +369,21 @@ body::-webkit-scrollbar-thumb{
 /*programming languages*/
 .language{
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: auto;
+}
+
+@media screen and (max-width: 905px){
+  .content3{
+    flex-direction: column;
+  }
+  
 }
 
 .languages{
-  font-size: 10px;
+  font-size: 0.7rem;
   width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -383,7 +393,7 @@ body::-webkit-scrollbar-thumb{
 .skills-bar{
   display: grid;
   height: 100%;
-  width: 600px;
+  width: 100%;
   background: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -511,10 +521,14 @@ body::-webkit-scrollbar-thumb{
 .projects{
   align-items: center;
   min-height: 110vh;
+  width: auto;
+  height: auto;
   background-image: url("img/Project-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects h1{
@@ -523,13 +537,21 @@ body::-webkit-scrollbar-thumb{
   color:rgb(255, 255, 255)
 }
 
+.project{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
 .projects article{
   display: flex;
   float: left;
   padding: 60px;
   width: 50%;
+  height: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 30px;
+  margin-bottom: 30px;
   position: relative;
   align-items: center;
   height: 400px;
@@ -546,9 +568,15 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width: 1050px){
+  .project{
+    flex-direction: column;
+    width: 80%;
+    margin-left: 30px;
+    height: auto;
+  }
   .projects article{
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     margin-left: 30px;
     height: auto;
   }
@@ -561,7 +589,9 @@ body::-webkit-scrollbar-thumb{
 .projects article a{
   text-decoration: none;
 }
-
+.projects{
+  height: auto;
+}
 /* footer */
 .footer{
   position: absolute;
@@ -593,6 +623,8 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 110vh;
+  height: auto;
+  width: 100%;
   background: #002e52;
 }
 
