@@ -374,83 +374,133 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*skill bar*/
-.circular-lang{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
-  width: 80%;
-}
-.circular-lang .card{
-  width: 20%;
+.skills-bar{
+  display: grid;
+  height: 100%;
+  width: 600px;
   background: #fff;
-  height: 120%;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.circular-lang .card .circle{
+.skills-bar .bar{
+  margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+  margin-top: 0px;
+}
+.skills-bar .bar .information{
+  margin-bottom: 5px;
+
+}
+
+.skills-bar .bar .information span{
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: showText2 0.5s 1s linear forwards;
+}
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.skills-bar .bar .progress-line{
   position: relative;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  cursor: default;
-}
-.card .circle .box,
-.card .circle .box span{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: all 0.1s;
-}
-.card .circle .box{
-  height: 100%;
+  height: 10px;
   width: 100%;
-  background: #fff;
-  transform: translate(-50%, -50%) scale(0.8);
-  border-radius: 50%;
-  transition: all 0.2s;
-}
-.card .circle:hover .box{
-  transform: translate(-50%, -50%) scale(0.91);
-}
-.card .circle .box span, .circular-lang .card .text{
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                    0px 1px rgba(225, 225, 225, 0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.card .circle .box span{
-  font-size: large;
-  font-weight: 600;
-  transform: translate(-45%, -50%);
-  transition: all 0.1s;
+.bar .progress-line span{
+  height: 100%;
+  width: 80%;
+  background: #6665ee;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
-
-.card .circle:hover .box span{
-  transform: translate(-45%, -50%) scale(1.09);
-}
-
-.card .text{
-  font-size: 20px;
-  font-weight: 600;
-}
-
-@media (max-width: 505px){
-  .circular-lang{
-    width: 500px;
-  }
-  .circular-lang .card{
-    width: 100%;
+@keyframes animate{
+  100%{
+    transform: scaleX(1);
   }
 }
-
+.progress-line.python span{
+  width: 90%;
+}
+.progress-line.html span{
+  width: 80%;
+}
+.progress-line.R span{
+  width: 75%;
+}
+.progress-line.js span{
+  width: 65%;
+}
+.progress-line.cpp span{
+  width: 30%;
+}
+.bar .progress-line span::before{
+  position: absolute;
+  content: '';
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after{
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2{
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.python span::after{
+  content: '90%';
+}
+.progress-line.html span::after{
+  content: '80%';
+}
+.progress-line.R span::after{
+  content: '75%';
+}
+.progress-line.js span::after{
+  content: '65%';
+}
+.progress-line.cpp span::after{
+  content: '30%';
+}
 /* project page */
 .projects{
   align-items: center;
