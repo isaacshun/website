@@ -344,6 +344,7 @@ body::-webkit-scrollbar-thumb{
   min-height: 700px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 
