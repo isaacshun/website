@@ -4,8 +4,6 @@ const faders = document.querySelectorAll('.fade-in');
 /*slider stuff*/
 const sliders = document.querySelectorAll('.slide-in')
 
-/* nav bar stuff */
-
 //Fade in animation
 const appearOptions = {
   threshold: 0

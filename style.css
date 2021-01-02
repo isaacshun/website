@@ -365,6 +365,39 @@ body::-webkit-scrollbar-thumb{
   padding: 30px;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.certificates{
+  display: flex;
+  width: 40%;
+  padding: 5px;
+}
+.certificates img{
+  width: 20%;
+  height: auto;
+}
+.certnames{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  font-size: 0.7em;
+}
+.certnames p, .certnames h3{
+  padding-top: 5px;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 850px){
+  .card .content2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificates{
+    width: 90%;
+  }
 }
 
 .card .content3{
