@@ -597,17 +597,18 @@ body::-webkit-scrollbar-thumb{
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
-  align-items: center;
+  justify-content: center;
 }
 
 .projects article{
   display: flex;
   float: left;
   padding: 60px;
-  width: 50%;
+  width: 40%;
   height: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+  margin-left: 5px;
   position: relative;
   align-items: center;
   height: 400px;
@@ -623,7 +624,7 @@ body::-webkit-scrollbar-thumb{
   padding: 10px;
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1265px){
   .project{
     flex-direction: column;
     width: 80%;
@@ -633,7 +634,7 @@ body::-webkit-scrollbar-thumb{
   .projects article{
     flex-direction: column;
     width: 80%;
-    margin-left: 30px;
+    margin-left: 3em;
     height: auto;
   }
   .projects article img{
@@ -645,6 +646,7 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 650px){
   .projects article{
     padding: 7px;
+    margin-left: 25px;
   }
   .article-txt p{
     display: none;
