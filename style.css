@@ -647,6 +647,7 @@ body::-webkit-scrollbar-thumb{
   .projects article{
     padding: 7px;
     margin-left: 25px;
+    border-radius: 5%;
   }
   .article-txt p{
     display: none;
