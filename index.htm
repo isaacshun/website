@@ -205,55 +205,65 @@
             </div>
           </article>
           <article class = "hvr-reveal fade-in">
-            <img src = "img/DMI.png" width = auto height = auto>
+            <img src = "img/Kaggle.JPG" width = auto height = auto>
             <div class="article-txt">
               <h3>Kaggle Projects <i class = "fab fa-r-project"></i> <i class = "fab fa-python"></i></h3>            
               <p>As a hobby, I sometimes take data from Kaggle and perform some data analysis on them. It cures my boredom during the quarantine, and it also hones my analytical skills and problem solving abilities. <br><br> Currently working on US professional chess game data with python.</p><br>
-              <a href="https://github.com/isaacshun/backtests"><i class = "fa fa-github"></i> Github Repository</a>
+              <a href="https://github.com/isaacshun/kaggle-projects"><i class = "fa fa-github"></i> Github Repository</a>
             </div>
           </article>
         </div>
       </div>
-      <section class = "contact-form">
-        <div class="contact" id = "contact">
-          <div class="contactinfo">
-            <div>
-              <h2>Contact Info</h2>
-              <ul class="contactinfo-info">
-                <li>
-                  <span><i class = "fas fa-map-marker-alt"></i><br><br>Markham, ON</span>
-                </li>
-                <li>
-                  <span></span>
-                  <span><i class = "fas fa-envelope"></i><br><br>isaacshun@yahoo.com</span>
-                </li>
-                <li>
-                  <span><i class = "fas fa-phone"></i><br><br>+1 (647)-202-1289</span>
-                </li>
-              </ul>
+      <section class = "contact">
+        <div class="content">
+          <h1>Contact Me</h1>
+          <p>I will try to contact you back as soon as possible</p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon"><i class = "fa fa-map-marker" aria-hidden = "true"></i></div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Markham, On, Canada</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class = "fa fa-phone" aria-hidden = "true"></i></div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>+1(647)-202-1289</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class = "fa fa-envelope-o" aria-hidden = "true"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>isaacshun@yahoo.com</p>
+              </div>
             </div>
           </div>
-          <div class="contactForm" id="contact">
-            <h2>Contact Me</h2>
-            <form id = "contact-form" method = "post" action = "mail.php" class="formBox">
-              <div class="inputBox w50">
-                <input type = "text" name = "fname" class = "form-control" required>
-                <span>First Name</span>
+          <div class="contactForm">
+            <form action="mail.php" method = "post">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type = "text" name = "name" required = "required">
+                <span>Full Name</span>
               </div>
-              <div class="inputBox w50">
-                <input type = "text" name = "lname" class = "form-control" required>
-                <span>Last Name</span>
+              <div class="inputBox">
+                <input type = "text" name = "mail" required = "required">
+                <span>Email</span>
               </div>
-              <div class="inputBox w50">
-                <input type = "text" name = "email" class = "form-control" required>
-                <span>Email Address</span>
+              <div class="inputBox">
+                <input type = "text" name = "subject" required = "required">
+                <span>Subject</span>
               </div>
-              <div class="inputBox w100">
-                <textarea name = "message" class = "form-control" required></textarea>
+              <div class="inputBox">
+                <textarea name = "message" required = "required"></textarea>
                 <span>Message</span>
               </div>
-              <div class="inputBox w100">
-                <input type = "submit" class = "form-control submit" value = "Send">
+              <div class="inputBox">
+                <input type = "submit" name = "submit" value = "Send">
               </div>
             </form>
           </div>
