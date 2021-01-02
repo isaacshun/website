@@ -10,6 +10,9 @@
 html{
   scroll-behavior: smooth;
 }
+html{
+  height: 100%;
+}
 
 /* nav bar */
 :root{
@@ -193,19 +196,11 @@ body::-webkit-scrollbar-thumb{
     }
   }
 /* home page */
-.Home_page{
-  background-image: url('img/newyorkmin.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  min-height: 110vh;
-}
-
 .info{
   color: white;
   align-items: center;
-  padding-top: 350px;
-  padding-bottom: 350px;
+  height: 100%;
+  width: 100%;
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -214,11 +209,13 @@ body::-webkit-scrollbar-thumb{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 175px;
+  padding-bottom: 175px;
 }
 
 .photo img{
   width: 200px;
-  height: 200px;
+  height: auto;
   border: 15px solid rgba(180, 180, 180, .5);
   border-radius: 50%;
 }
@@ -234,6 +231,12 @@ body::-webkit-scrollbar-thumb{
   }
   .text{
     order: 2;
+  }
+}
+@media screen and (min-width:1380px){
+  .info{
+    padding-top: 350px;
+    padding-bottom: 350px;
   }
 }
 
@@ -636,6 +639,15 @@ body::-webkit-scrollbar-thumb{
   .projects article img{
     width: 80%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .projects article{
+    padding: 7px;
+  }
+  .article-txt p{
+    display: none;
   }
 }
 
