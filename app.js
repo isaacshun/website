@@ -2,7 +2,11 @@
 const faders = document.querySelectorAll('.fade-in');
 
 /*slider stuff*/
-const sliders = document.querySelectorAll('.slide-in')
+const sliders = document.querySelectorAll('.slide-in');
+
+/*bar stuff*/
+const bar = document.querySelectorAll('.bar');
+const progress = document.querySelectorAll('.progress-line');
 
 //Fade in animation
 const appearOptions = {
@@ -29,8 +33,13 @@ faders.forEach(fader => {
 /*slider animation*/
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
-})
+});
 
-navSlide();
+/*bar animation*/
+bar.forEach(slider => {
+  appearOnScroll.observe(slider);
+});
 
-
+progress.forEach(slider => {
+  appearOnScroll.observe(slider);
+});

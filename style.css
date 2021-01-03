@@ -491,7 +491,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-.skills-bar .bar .progress-line{
+.skills-bar .bar.appear .progress-line.appear{
   position: relative;
   height: 10px;
   width: 100%;
@@ -507,7 +507,7 @@ body::-webkit-scrollbar-thumb{
 .bar .progress-line span{
   height: 100%;
   width: 80%;
-  background: #6665ee;
+  background: linear-gradient(45deg, #6665ee, orange);
   position: absolute;
   border-radius: 10px;
   transform: scaleX(0);
@@ -519,19 +519,19 @@ body::-webkit-scrollbar-thumb{
     transform: scaleX(1);
   }
 }
-.progress-line.python span{
+.progress-line.appear.python span{
   width: 90%;
 }
-.progress-line.html span{
+.progress-line.appear.html span{
   width: 80%;
 }
-.progress-line.R span{
+.progress-line.appear.R span{
   width: 75%;
 }
-.progress-line.js span{
+.progress-line.appear.js span{
   width: 65%;
 }
-.progress-line.cpp span{
+.progress-line.appear.cpp span{
   width: 30%;
 }
 .bar .progress-line span::before{
