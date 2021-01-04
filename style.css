@@ -261,6 +261,7 @@ body::-webkit-scrollbar-thumb{
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 /*Github Icon css */
@@ -274,6 +275,7 @@ body::-webkit-scrollbar-thumb{
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 /*Resume Icon css */
@@ -449,8 +451,7 @@ body::-webkit-scrollbar-thumb{
 .languages{
   font-size: 0.7rem;
   width: 200px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
 
 /*skill bar*/
