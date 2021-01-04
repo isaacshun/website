@@ -213,10 +213,7 @@ body::-webkit-scrollbar-thumb{
   padding-right: 100px;
   display: flex;
   justify-content: space-around;
-  background-image: url('img/newyorkmin.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(img/newyorkmin.jpg) no-repeat center center fixed;
   padding-top: 175px;
   padding-bottom: 175px;
 }
@@ -507,7 +504,7 @@ body::-webkit-scrollbar-thumb{
 .bar .progress-line span{
   height: 100%;
   width: 80%;
-  background: linear-gradient(45deg, #6665ee, orange);
+  background: linear-gradient(45deg, #37047a,#7575fa);
   position: absolute;
   border-radius: 10px;
   transform: scaleX(0);
@@ -587,7 +584,7 @@ body::-webkit-scrollbar-thumb{
   min-height: 110vh;
   width: auto;
   height: auto;
-  background-image: url("img/Project-page.jpg");
+  background: url(img/Project-page.jpg) no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
