@@ -213,11 +213,10 @@ body::-webkit-scrollbar-thumb{
   padding-right: 100px;
   display: flex;
   justify-content: space-around;
-  background: url(img/newyorkmin.jpg) no-repeat center center fixed;
+  background-image: url('img/newyorkmin.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   padding-top: 175px;
   padding-bottom: 175px;
 }
@@ -588,13 +587,10 @@ body::-webkit-scrollbar-thumb{
   min-height: 110vh;
   width: auto;
   height: auto;
-  background: url(img/Project-page.jpg) no-repeat center center fixed;
+  background-image: url("img/Project-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   display: flex;
   flex-direction: column;
 }
