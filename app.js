@@ -36,10 +36,10 @@ sliders.forEach(slider => {
 });
 
 /*bar animation*/
-bar.forEach(slider => {
-  appearOnScroll.observe(slider);
+bar.forEach(bars => {
+  appearOnScroll.observe(bars);
 });
 
-progress.forEach(slider => {
-  appearOnScroll.observe(slider);
+progress.forEach(progress => {
+  appearOnScroll.observe(progress);
 });
