@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
@@ -8,12 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c1bec679dd.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Isaac Tsang</title>
     <!-- <link rel="shortcut icon" type="image/png" href="Fintech_logo.png"> -->
   </head>
@@ -74,8 +70,8 @@
       </nav>
     </header>
     <main><!-- Home page -->
-      <div class="Home_page" id = "Home_page">
-        <div class="info">
+      <div class="Home_page">
+        <div class="info"  id = "Home_page">
           <div class="text slide-in from-left">
             <h1>Isaac Tsang</h1><br>
             <h1>Candidate for Bachelor of Accounting and Financial Management</h1>
@@ -257,17 +253,34 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="work">
+      <div id="work">
         <h1>Experience</h1>
         <div class="experience slide-in from-bottom">
-          <img src = "img/bookkeeping.jpg" width = 80% height = auto>
+          <img src = "img/bookkeeping.jpg">
           <div class="exptxt">
             <h2>Fiverr Bookkeeping Gig</h2>
             <p></p>
           </div>
         </div>
         <div class="experience slide-in from-bottom">
-          <img src = "img/bookkeeping.jpg" width = 80% height = auto>
+          <img src = "img/bookkeeping.jpg">
+          <div class="exptxt">
+            <h2>Fiverr Bookkeeping Gig</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="work">
+        <h1>Skill</h1>
+        <div class="experience slide-in from-bottom">
+          <img src = "img/bookkeeping.jpg">
+          <div class="exptxt">
+            <h2>Fiverr Bookkeeping Gig</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="experience slide-in from-bottom">
+          <img src = "img/bookkeeping.jpg">
           <div class="exptxt">
             <h2>Fiverr Bookkeeping Gig</h2>
             <p></p>
@@ -355,13 +368,12 @@
           </div>
         </div>
       </section>
-      <div class="footer">
+      <footer class="footer">
         <h4 class="name_address">Created using: <br><br><a href = "https://swiperjs.com/">Swiper.JS</a><br><a href = "https://fontawesome.com/">FontAwesome</a><br><a href = "https://jquery.com/">jQuery</a></h4>
         <p class="signature"> <br>&copy Designed by Isaac Tsang</p>
-      </div>
+      </footer>
     </main>
     <script src="app.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.swiper-container', {

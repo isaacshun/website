@@ -14,11 +14,13 @@
   padding: 0;
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
 html{
   scroll-behavior: smooth;
-}
-html{
-  height: 100%;
 }
 
 /* nav bar */
@@ -209,27 +211,24 @@ body::-webkit-scrollbar-thumb{
     }
   }
 /* home page */
+
 .info{
   color: white;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
-  -webkit-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
-  -moz-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
-  -o-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center fixed;
   /* background-position: center;
   background-repeat: no-repeat; */
+  position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 175px;
-  padding-bottom: 175px;
+  padding-left: 125px;
+  padding-right: 125px;
 }
 
 .photo img{
@@ -243,6 +242,7 @@ body::-webkit-scrollbar-thumb{
   .info{
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
   .photo img{
     order: 1;
@@ -250,12 +250,6 @@ body::-webkit-scrollbar-thumb{
   }
   .text{
     order: 2;
-  }
-}
-@media screen and (min-width:1380px){
-  .info{
-    padding-top: 350px;
-    padding-bottom: 350px;
   }
 }
 
@@ -642,13 +636,13 @@ body::-webkit-scrollbar-thumb{
   content: '30%';
 }
 /* Experience page */
-.work{
+#work{
   text-align: center;
   min-height: 110vh;
   display: flex;
   flex-direction: column;
 }
-.work h1{
+#work h1{
   padding: 50px;
 }
 .experience{
@@ -744,20 +738,9 @@ body::-webkit-scrollbar-thumb{
 }
 /* footer */
 .footer{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 3.3rem;
   background-color: #efefef;
   text-align: center;
-}
-
-body{
-  position: relative;
-  margin: 0;
-  min-height: 100%;
-  padding-bottom: 15rem;
 }
 
 /* contact us form */
