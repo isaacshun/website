@@ -100,6 +100,11 @@ html{
   transition: var(--transition-speed);
 }
 
+.fa-briefcase{
+  color: orange;
+  transition: var(--transition-speed);
+}
+
 .fa-code{
   color: orange;
   transition: var(--transition-speed);
@@ -213,9 +218,15 @@ body::-webkit-scrollbar-thumb{
   padding-right: 100px;
   display: flex;
   justify-content: space-around;
-  background-image: url('img/newyorkmin.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
+  -webkit-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
+  -moz-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
+  -o-background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url('img/newyorkmin.jpg') no-repeat center center fixed;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding-top: 175px;
   padding-bottom: 175px;
@@ -279,15 +290,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*Resume Icon css */
-.fa-file-alt {
-  padding: -1px;
-  color: white;
-  font-size: 30px;
-  width: 25px;
-  text-align: center;
+#resume{
+  background: rgb(0, 110, 255);
+  padding: 5px;
   text-decoration: none;
-  cursor: pointer;
+  color: white;
+  border-radius: 10%;
 }
+
 
 .fa-map-marker-alt{
   color: rgb(250, 96, 96);
@@ -316,15 +326,29 @@ body::-webkit-scrollbar-thumb{
   transform: translateX(50%);
 }
 
-.from-left, .from-right{
+.from-top{
+  transform: translateY(-50%);
+}
+
+.from-bottom{
+  transform: translateY(50%);
+}
+
+.from-left, .from-right, .from-top{
   transition: opacity 250ms ease-in, 
   transform 400ms ease-in;
   opacity: 0;
 }
 
-.from-left.appear, .from-right.appear{
-  transform: translateX(0);
+.from-left.appear, .from-right.appear, .from-top.appear, .from-bottom.appear{
+  animation: from 1s cubic-bezier(.2,.09,.39,1) forwards;
   opacity: 1;
+}
+
+@keyframes from{
+  100%{
+    transform: translateX(0%);
+  }
 }
 
 /*about page*/
@@ -616,6 +640,19 @@ body::-webkit-scrollbar-thumb{
 }
 .progress-line.cpp span::after{
   content: '30%';
+}
+/* Experience page */
+.work{
+  text-align: center;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+.work h1{
+  padding: 50px;
+}
+.experience{
+  padding: 10px;
 }
 /* project page */
 .projects{
