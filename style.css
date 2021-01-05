@@ -231,6 +231,32 @@ body::-webkit-scrollbar-thumb{
   padding-right: 125px;
 }
 
+ @media (hover: none){
+  .info{
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+@media (pointer: coarse){
+  .info{
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
 .photo img{
   width: 200px;
   height: auto;
