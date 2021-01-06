@@ -506,7 +506,7 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   width: 1050px;
 }
-.experience img{
+.experience img, .experience video{
   width:353px;
   height:auto;
 }
@@ -601,7 +601,7 @@ body::-webkit-scrollbar-thumb{
     width: 70%;
     float: left;
   }
-  .experience img{
+  .experience img, .experience video{
     width: 80%;
   }
 
