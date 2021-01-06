@@ -8,6 +8,8 @@ const sliders = document.querySelectorAll('.slide-in');
 const bar = document.querySelectorAll('.bar');
 const progress = document.querySelectorAll('.progress-line');
 
+/*skill stuff*/
+const skill = document.getElementById('.innerskillbox');
 //Fade in animation
 const appearOptions = {
   threshold: 0
@@ -42,4 +44,8 @@ bar.forEach(bars => {
 
 progress.forEach(progress => {
   appearOnScroll.observe(progress);
+});
+/*skillbox animation*/
+skill.forEach(skill => {
+  appearOnScroll.observe(skill);
 });

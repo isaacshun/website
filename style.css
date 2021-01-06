@@ -107,6 +107,11 @@ html{
   transition: var(--transition-speed);
 }
 
+.fa-chart-bar{
+  color: orange;
+  transition: var(--transition-speed);
+}
+
 .fa-code{
   color: orange;
   transition: var(--transition-speed);
@@ -229,32 +234,6 @@ body::-webkit-scrollbar-thumb{
   background-size: cover;
   padding-left: 125px;
   padding-right: 125px;
-}
-
- @media (hover: none){
-  .info{
-    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-left: 125px;
-    padding-right: 125px;
-  }
-}
-
-@media (pointer: coarse){
-  .info{
-    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-left: 125px;
-    padding-right: 125px;
-  }
 }
 
 .photo img{
@@ -510,28 +489,161 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   background: #000;
 }
+/* Experience page */
+#work{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+#work h1{
+  padding-bottom: 50px;
+}
+.experience{
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 1050px;
+}
+.experience img{
+  width:353px;
+  height:auto;
+}
+.exptxt{
+  text-align: left;
+  padding: 20px;
+}
+.exptxt h2{
+  font-size: 1.3em;
+}
+.exptxt .company{
+  padding-bottom: 20px;
+}
 
+/* skills page */
+#skill{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills{
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+  0px 1px rgba(225, 225, 225, 0.8);
+  color:#fff;
+}
+.skillbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.innerskillbox{
+  width: 40%;
+  height: 50px;
+  margin: 20px;
+  padding-top: 15px;
+  padding-bottom: -15px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: rgba(233, 233, 233, 0.541);
+  color: #fff;
+  animation: innerskill 1s cubic-bezier(.2,.09,.39,1) forwards;
+  animation-delay: 1s;
+}
+.soft{
+  background: linear-gradient(rgba(0, 18, 99, 0.74), rgba(0, 18, 99, 0.74)), url(img/soft-skills.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px;
+}
+.hard{
+  background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(img/IDE.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skillbox2{
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes innerskill{
+  100%{
+    transform: scaleX(1);
+  }
+}
+@media screen and (max-width: 1250px){
+  .experience{
+    flex-direction: column;
+    width: 70%;
+    float: left;
+  }
+  .experience img{
+    width: 80%;
+  }
+
+  .skillbox{
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .innerskillbox{
+    width: 90%;
+  }
+  .skillbox2{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .skills-bar{
+    margin: 10px;
+  }
+}
 /*programming languages*/
 .language{
+  position: relative;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;
   height: auto;
-}
-
-@media screen and (max-width: 905px){
-  .content4{
-    flex-direction: column;
-  }
-  
+  z-index: 1;
 }
 
 .languages{
   font-size: 0.7rem;
   width: 200px;
   padding: 5px;
+  position: relative;
+  min-height: 200px;
+  height: auto;
+  margin: 25px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
+
 
 /*skill bar*/
 .skills-bar{
@@ -541,21 +653,17 @@ body::-webkit-scrollbar-thumb{
   background: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 25px 30px;
+  color: black;
+  text-align: left;
 }
 
 .skills-bar .bar{
   margin: 20px 0;
-}
+} 
 
 .skills-bar .bar:first-child{
   margin-top: 0px;
-}
-.skills-bar .bar .information{
-  margin-bottom: 5px;
-
 }
 
 .skills-bar .bar .information span{
@@ -630,6 +738,7 @@ body::-webkit-scrollbar-thumb{
 }
 .bar .progress-line span::after{
   position: absolute;
+  content: "80%";
   right: 0;
   top: -28px;
   color: #fff;
@@ -661,29 +770,13 @@ body::-webkit-scrollbar-thumb{
 .progress-line.cpp span::after{
   content: '30%';
 }
-/* Experience page */
-#work{
-  text-align: center;
-  min-height: 110vh;
-  display: flex;
-  flex-direction: column;
-}
-#work h1{
-  padding: 50px;
-}
-.experience{
-  padding: 10px;
-}
 /* project page */
 .projects{
   align-items: center;
   min-height: 110vh;
   width: auto;
   height: auto;
-  background-image: url("img/Project-page.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(233, 232, 232);
   display: flex;
   flex-direction: column;
 }
@@ -691,7 +784,7 @@ body::-webkit-scrollbar-thumb{
 .projects h1{
   padding-top: 40px;
   text-align: center;
-  color:rgb(255, 255, 255)
+  color:rgb(0, 0, 0);
 }
 
 .project{
@@ -1046,5 +1139,58 @@ body::-webkit-scrollbar-thumb{
     border-right-color: var(--color);
     border-bottom-color: var(--color);
     border-left-color: var(--color);
+  }
+}
+@media (hover: none){
+  .info{
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+  .soft{
+    background: linear-gradient(rgba(0, 18, 99, 0.74), rgba(0, 18, 99, 0.74)), url(img/soft-skills.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .hard{
+    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(img/IDE.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media (pointer: coarse){
+  .info{
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+  .soft{
+    background: linear-gradient(rgba(0, 18, 99, 0.74), rgba(0, 18, 99, 0.74)), url(img/soft-skills.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .hard{
+    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(img/IDE.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
