@@ -573,7 +573,7 @@ body::-webkit-scrollbar-thumb{
   padding-bottom: 50px;
 }
 .hard{
-  background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1166,7 +1166,7 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
   }
   .hard{
-    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.jpg) no-repeat center center scroll;
+    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.JPG) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1193,7 +1193,7 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
   }
   .hard{
-    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.jpg) no-repeat center center scroll;
+    background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(IDE.JPG) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
