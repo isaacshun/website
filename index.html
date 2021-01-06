@@ -49,13 +49,13 @@
             <i class = "fas fa-home"></i>
             <span class = "link-text">Home</span>
           </a>
-          <a href="#about" class = "nav-link">
-            <i class = "fas fa-info-circle"></i>
-            <span class = "link-text">About me</span>
-          </a>
           <a href="#work" class = "nav-link">
             <i class = "fas fa-briefcase"></i>
             <span class = "link-text">Experience</span>
+          </a>
+          <a href="#education" class = "nav-link">
+            <i class = "fas fa-book"></i>
+            <span class = "link-text">Education</span>
           </a>
           <a href="#skill" class = "nav-link">
             <i class = "far fa-chart-bar"></i>
@@ -92,110 +92,20 @@
           </div>
         </div>
       </div>
-      <div class="about" id = "about">
-        <h1>About Me</h1>
-        <div class="swiper-container fade-in">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="sliderText">
-                  <h3>Born in 2002. Came to Canada at 12 years old. Aspiring Finance Professional</h3>
-                </div>
-                <div class="content1">
-                  <p>Hi! My name is Isaac, and I am a student at the University of Waterloo's Accounting and Financial Management Program. I am an investor, data scientist, an aspiring CPA, and an aspiring CFA.</p>
-                  <br>
-                  <p>I have been interested in the stock markets ever since I was young. It is fascinating to me how the economy and consumers move the markets (and the charts look cool to me). I also love the idea that we can make decisions with computers and data.</p>
-                  <br>
-                  <p>Whenever I have free time, I would enjoy a few episodes of anime and listen to music. Some of my favourite music genres are classical period pieces, romantic period pieces (Moonlight Sonata anyone?), Jazz, Jazzhop, Rap, EDM, and Lo-Fi.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="sliderText">
-                  <h3>Education</h3>
-                </div>
-                <div class="content2">
-                  <div class = "Education">
-                    <div class="edu-text">
-                      <div class="university">
-                        <div class="uniname">
-                          <p>University of Waterloo (School of Accounting and Finance)</p>
-                        </div>
-                        <p>Bachelor of Accounting and Financial Management</p>
-                        <p>Waterloo, On</p>
-                      </div>
-                      <div class = "year"> 2020-2025 </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="sliderText">
-                  <h3>Certificates</h3>
-                </div>
-                <div class="content3">
-                  <div class="certificates hvr-glow border-animation">
-                    <div class = "border-animation__inner">
-                      <img src = "img/google.png">
-                      <div class="certnames">
-                        <h3>Google</h3>
-                        <p>Digital Marketing Fundamentals</p>
-                        <p>Advanced Google Analytics IQ</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="certificates hvr-glow border-animation">
-                    <div class = "border-animation__inner">
-                      <img src = "img/bloomberg.jpg">
-                      <div class="certnames">
-                        <h3>Bloomberg</h3>
-                        <p>Bloomberg Market Concepts</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="certificates hvr-glow border-animation">
-                    <div class="border-animation__inner">
-                      <img src = "img/fcc.png">
-                      <div class="certnames">
-                        <h3>freeCodeCamp</h3>
-                        <p>Responsive Web Design</p>
-                        <p>JavaScript Algorithms and Data Structures</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="certificates hvr-glow border-animation">
-                    <div class="border-animation__inner">
-                      <img src = "img/HubSpot.jpg">
-                      <div class="certnames">
-                        <h3>Hubspot</h3>
-                        <p>Inbound Marketing</p>
-                        <p>Inbound Sales</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="certificates hvr-glow border-animation">
-                    <div class="border-animation__inner">
-                      <img src = "img/csi.jpg">
-                      <div class="certnames">
-                        <h3>Canadian Securities Institute</h3>
-                        <p>Canadian Securities Course (finished part 1)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+      <div class="about-container">
+        <img src = "img/Isaac-removebg-preview.png" height=100% width= auto>
+        <div class="about-txt">
+          <p>About Me</p> <br>
+          <p>Hi! My name is Isaac, and I am a student at the University of Waterloo's Accounting and Financial Management Program. I am an investor, data scientist, an aspiring CPA, and an aspiring CFA.</p>
+          <br>
+          <p>I have been interested in the stock markets ever since I was young. It is fascinating to me how the economy and consumers move the markets (and the charts look cool to me). I also love the idea that we can make decisions with computers and data.</p>
+          <br>
+          <p>Whenever I have free time, I would enjoy a few episodes of anime and listen to music. Some of my favourite music genres are classical period pieces, romantic period pieces (Moonlight Sonata anyone?), Jazz, Jazzhop, Rap, EDM, and Lo-Fi.</p>
         </div>
       </div>
       <div id="work">
         <h1>Experience</h1>
-        <div class="experience slide-in from-bottom">
+        <div class="experience slide-in from-left">
           <img src = "img/bookkeeping.jpg">
           <div class="exptxt">
             <h2>Freelance Bookkeeper</h2>
@@ -203,7 +113,7 @@
             <p>As a freelance bookkeeper, my duty is to prepare journal entries and financial statements for start-ups and individuals. I have journalized invoices, transactions, and prepared financial statements through Excel. Currently learning Sage 50.</p>
           </div>
         </div>
-        <div class="experience slide-in from-bottom">
+        <div class="experience slide-in from-left">
           <div class="video">
             <video autoplay loop muted>
               <source src = "softncomfy.mp4" type="video/mp4">
@@ -213,6 +123,73 @@
             <h2>Owner</h2>
             <p class = "company">SoftnComfy (May 2020 - Oct 2020)</p>
             <p>As an entrepreneur, I conducted market research, designed the company website, video-edited product advertisements, and did budgeting for the company. I strived to bring people modern and minimalistic products to improve their lives, and earned $100 in net profit in the first day.</p>
+          </div>
+        </div>
+      </div>
+      <div id="education">
+        <h1>Education</h1>
+        <div class="educationbox">
+          <div class="school slide-in from-left">
+            <img src = "img/waterloo.png" width = 30% height = auto>
+            <div class="edutxt">
+              <p>University of Waterloo (School of Accounting and Finance)</p>
+              <p>Bachelor of Accounting and Financial Management</p>
+              <p>Waterloo, On</p>
+              <div class = "year"> 2020-2025 </div>
+            </div>
+          </div>
+          <div class="certbox">
+            <h3>Certificates</h3>
+            <div class="certifications">
+              <div class="certificates hvr-glow border-animation">
+                <div class = "border-animation__inner">
+                  <img src = "img/google.png">
+                  <div class="certnames">
+                    <h3>Google</h3>
+                    <p>Digital Marketing Fundamentals</p>
+                    <p>Advanced Google Analytics IQ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="certificates hvr-glow border-animation">
+                <div class = "border-animation__inner">
+                  <img src = "img/bloomberg.jpg">
+                  <div class="certnames">
+                    <h3>Bloomberg</h3>
+                    <p>Bloomberg Market Concepts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="certificates hvr-glow border-animation">
+                <div class="border-animation__inner">
+                  <img src = "img/fcc.png">
+                  <div class="certnames">
+                    <h3>freeCodeCamp</h3>
+                    <p>Responsive Web Design</p>
+                    <p>JavaScript Algorithms and Data Structures</p>
+                  </div>
+                </div>
+              </div>
+              <div class="certificates hvr-glow border-animation">
+                <div class="border-animation__inner">
+                  <img src = "img/HubSpot.jpg">
+                  <div class="certnames">
+                    <h3>Hubspot</h3>
+                    <p>Inbound Marketing</p>
+                    <p>Inbound Sales</p>
+                  </div>
+                </div>
+              </div>
+              <div class="certificates hvr-glow border-animation">
+                <div class="border-animation__inner">
+                  <img src = "img/csi.jpg">
+                  <div class="certnames">
+                    <h3>Canadian Securities Institute</h3>
+                    <p>Canadian Securities Course (finished part 1)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
