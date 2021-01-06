@@ -495,7 +495,7 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 30px;
 }
 #work h1{
   padding-bottom: 50px;
@@ -527,6 +527,11 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(rgba(0, 18, 99, 0.918), rgba(0, 18, 99, 0.74));
+}
+#skill h1{
+  padding: 30px;
+  color: white;
 }
 .skills{
   padding: 10px;
@@ -564,7 +569,8 @@ body::-webkit-scrollbar-thumb{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .hard{
   background: linear-gradient(rgba(46, 46, 46, 0.74), rgba(46, 46, 46, 0.74)), url(img/IDE.jpg) no-repeat center center fixed;
@@ -694,7 +700,7 @@ body::-webkit-scrollbar-thumb{
 
 .bar .progress-line span{
   height: 100%;
-  width: 80%;
+  width: 50%;
   background: linear-gradient(45deg, #37047a,#7575fa);
   position: absolute;
   border-radius: 10px;
