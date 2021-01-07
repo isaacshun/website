@@ -391,7 +391,6 @@ body::-webkit-scrollbar-thumb{
   .about-container{
     width: 90%;
     border-radius: 10px;
-    top: 0px;
     flex-direction: column;
     height: auto;
     padding: 30px 0px;
@@ -402,6 +401,7 @@ body::-webkit-scrollbar-thumb{
   }
   .about-container .about-txt{
     width: 90%;
+    padding-top: 30px;
   }
   .about-container .about-txt p:nth-child(1){
     font-size: 20px;
