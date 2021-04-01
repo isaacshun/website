@@ -248,6 +248,10 @@ body::-webkit-scrollbar-thumb{
   padding-right: 125px;
 }
 
+.info h4{
+  text-decoration: none;
+}
+
 .photo img{
   width: 200px;
   height: auto;
