@@ -7,6 +7,16 @@
        url('Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 *{
   font-family: "Montserrat-Regular", sans-serif;
   box-sizing: border-box;
@@ -226,7 +236,7 @@ body::-webkit-scrollbar-thumb{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/city.jpg) no-repeat center center fixed;
   /* background-position: center;
   background-repeat: no-repeat; */
   position: relative;
@@ -425,10 +435,9 @@ body::-webkit-scrollbar-thumb{
 .certnames{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding: 5px;
   font-size: 0.7em;
-  min-height: 105px;
+  min-height: 90px;
 }
 .certnames p, .certnames h3{
   padding-top: 5px;
@@ -588,6 +597,7 @@ body::-webkit-scrollbar-thumb{
 .work-experience{
   text-align: center;
   padding-left: 5%;
+  width: 50%;
 }
 
 @media (max-width: 2350px){
@@ -596,13 +606,17 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 0;
   }
 
+  .work-experience{
+    width: 100%;
+  }
+
   .timeline:before{
     left: 20px;
   }
 
   .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even){
-    width: 100%;
+    min-width: 100%;
     text-align: left;
     padding-left: 50px;
     padding-bottom: 50px;
@@ -962,22 +976,24 @@ body::-webkit-scrollbar-thumb{
   background: rgb(233, 232, 232);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
 }
 
 .section-project{
-  width: 80%;
-  max-width: 1350px;
+  width: 90%;
+  max-width: 1650px;
   margin: 40px auto;
 }
 
-.section-project ul{
+.section-project .button-group{
   display: flex;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
 }
 
-.section-project ul li{
+.section-project .button-group button{
   list-style: none;
   background: #eee;
   padding: 8px 20px;
@@ -987,9 +1003,10 @@ body::-webkit-scrollbar-thumb{
   border-radius: 5px;
 }
 
-.section-project ul li.active{
+.section-project .button-group button.active{
   background: #0388f4;
   color: #fff;
+  transition: 0.2s
 }
 
 .project{
@@ -1080,7 +1097,7 @@ body::-webkit-scrollbar-thumb{
     height: auto;
   }
 
-  .section-project ul{
+  .section-project .button-group{
     flex-direction: column;
     justify-content: center;
   }
@@ -1094,8 +1111,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 14px;
   }
   
-  .section-project ul li{
-    width: 80%;
+  .section-project .button-group button{
     font-size: 5vw
   }
 

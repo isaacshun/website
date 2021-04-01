@@ -141,7 +141,7 @@
                   <div class="experience-content">
                     <h3>Marketing Associate</h3>
                     <h6>Accounting and Finance Student Association</h6>
-                    <p>As a freelance bookkeeper, my duty is to prepare journal entries and financial statements for start-ups and individuals. I have journalized invoices, transactions, and prepared financial statements through Excel. Currently learning Sage 50.</p>
+                    <p>As a marketing associate, I managed the organization's instagram, posted stories and organizational events and generated over 200 followers.</p>
                   </div>
                   <div class="time">
                     <h4>September 2020</h4>
@@ -319,12 +319,12 @@
       <div class="projects" id = "projects">
         <h1>Projects</h1>
         <section class="section-project">
-          <ul>
-            <li class="proj-list active" data-filter="all">All</li>
-            <li class="proj-list" data-filter="Finance">Finance</li>
-            <li class="proj-list" data-filter="Accounting">Accounting</li>
-            <li class="proj-list" data-filter="Data-Analytics">Data Analytics</li>
-          </ul>
+          <div class="button-group">
+            <button class="proj-list active" data-filter="all">All</button>
+            <button class="proj-list" data-filter = "Finance">Finance</button>
+            <button class="proj-list" data-filter = "Accounting">Accounting</button>
+            <button class="proj-list" data-filter = "Data-Analytics">Data Analytics</button>
+          </div>
           <div class="project">
             <div class="itemBox Finance">
               <a href="https://github.com/isaacshun/fred-db">
@@ -442,6 +442,7 @@
         "max-glare": 1,
       });
     </script>
+    <!-- The project filter -->
     <script>
       $(document).ready(function(){
         $('.proj-list').click(function(){
