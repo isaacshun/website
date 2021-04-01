@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c1bec679dd.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
     <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -105,24 +105,82 @@
       </div>
       <div id="work">
         <h1>Experience</h1>
-        <div class="experience slide-in from-left">
-          <img src = "img/bookkeeping.jpg">
-          <div class="exptxt">
-            <h2>Freelance Bookkeeper</h2>
-            <p class = "company">Fiverr (Mar 2020 - Oct 2020)</p>
-            <p>As a freelance bookkeeper, my duty is to prepare journal entries and financial statements for start-ups and individuals. I have journalized invoices, transactions, and prepared financial statements through Excel. Currently learning Sage 50.</p>
+        <div class="work">
+          <div class="work-experience">
+            <h3>Work Experience</h3>
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="experience-content">
+                    <h3>Freelance Bookkeeper</h3>
+                    <p>As a freelance bookkeeper, my duty is to prepare journal entries and financial statements for start-ups and individuals. I have journalized invoices, transactions, and prepared financial statements through Excel. Currently learning Sage 50.</p>
+                  </div>
+                  <div class="time">
+                    <h4>March 2020</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-content">
+                    <h3>Founder</h3>
+                    <h5>SoftnComfy</h5>
+                    <p>As a business founder, I have conducted market research, designed company website, video-edited product advertisements, and did budgeting. Brought people modern and minimalistic products to improve their lives.</p>
+                  </div>
+                  <div class="time">
+                    <h4>May 2020</h4>
+                  </div>
+                </li>
+                <div style="clear: both;"></div>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="experience slide-in from-left">
-          <div class="video">
-            <video autoplay loop muted>
-              <source src = "softncomfy.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="exptxt">
-            <h2>Owner</h2>
-            <p class = "company">SoftnComfy (May 2020 - Oct 2020)</p>
-            <p>As an entrepreneur, I conducted market research, designed the company website, video-edited product advertisements, and did budgeting for the company. I strived to bring people modern and minimalistic products to improve their lives, and earned $100 in net profit in the first day.</p>
+          <div class="work-experience">
+            <h3>Club Experience</h3>
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="experience-content">
+                    <h3>Marketing Associate</h3>
+                    <h6>Accounting and Finance Student Association</h6>
+                    <p>As a freelance bookkeeper, my duty is to prepare journal entries and financial statements for start-ups and individuals. I have journalized invoices, transactions, and prepared financial statements through Excel. Currently learning Sage 50.</p>
+                  </div>
+                  <div class="time">
+                    <h4>September 2020</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-content">
+                    <h3>Technology Director</h3>
+                    <h6>UW Fintech Club</h6>
+                    <p>As the technology director, I built and maintained the club website using HTML, CSS, and JS.</p>
+                  </div>
+                  <div class="time">
+                    <h4>October 2020</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-content">
+                    <h3>Market Research Analyst</h3>
+                    <h6>UW Finance Association</h6>
+                    <p>Conducted financial market research using python and R, and collaborated with fellow analysts to produce research reports.</p>
+                  </div>
+                  <div class="time">
+                    <h4>January 2021</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-content">
+                    <h3>Tax Preparer</h3>
+                    <h6>Accounting and Finance Student Association Tax Clinic</h6>
+                    <p>Received training from tax professionals and collaborated with colleagues to file taxes for waterloo residents.</p>
+                  </div>
+                  <div class="time">
+                    <h4>March 2021</h4>
+                  </div>
+                </li>
+                <div style="clear: both;"></div>
+              </ul>
+            </div>
+            <div style="clear: both;"></div>  
           </div>
         </div>
       </div>
@@ -249,37 +307,10 @@
                 <h4>C++</h4>
                 <p>The language I am currently learning. I love how fast it is, and it helps me understand computers more.</p>
               </div>
-            </div>
-            <div class="skills-bar">
-              <div class="bar">
-                <div class="information">
-                  <span>Python</span>
-                </div>
-                <div class="progress-line python"><span></span></div>
-              </div>
-              <div class="bar">
-                <div class="information">
-                  <span>HTML & CSS</span>
-                </div>
-                <div class="progress-line html"><span></span></div>
-              </div>
-              <div class="bar">
-                <div class="information">
-                  <span>R</span>
-                </div>
-                <div class="progress-line R"><span></span></div>
-              </div>
-              <div class="bar">
-                <div class="information">
-                  <span>JavaScript</span>
-                </div>
-                <div class="progress-line js"><span></span></div>
-              </div>
-              <div class="bar">
-                <div class="information">
-                  <span>C++</span>
-                </div>
-                <div class="progress-line cpp"><span></span></div>
+              <div class="languages">
+                <img src = 'img/racket-logo.svg' width = 40 height = 40>
+                <h4>Racket</h4>
+                <p>A language that I learned in my first computer science class in university. It taught me functional programming and I have done some school projects with it.</p>
               </div>
             </div>
           </div>
@@ -287,32 +318,61 @@
       </div>
       <div class="projects" id = "projects">
         <h1>Projects</h1>
-        <div class="project">
-          <article class = "hvr-reveal fade-in">
-            <img src = "img/FRED-DB.JPG" width = auto height = auto>
-            <div class="article-txt">
-              <h3>FRED-DB <i class = "fab fa-python"></i></h3>            
-              <p>FRED-DB is a bot I developed using discord.py and fredapi that allows users to retrive data from the Federal Reserve Economic Data Database and plot it for analysis. I notice that there are finance discord servers where they have to livestream every time they want to discuss economic data and charts with others. So with this, they can just discuss and talk through chat.</p><br>
-              <a href="https://github.com/isaacshun/fred-db"><i class = "fa fa-github"></i> Github Repository</a>
+        <section class="section-project">
+          <ul>
+            <li class="proj-list active" data-filter="all">All</li>
+            <li class="proj-list" data-filter="Finance">Finance</li>
+            <li class="proj-list" data-filter="Accounting">Accounting</li>
+            <li class="proj-list" data-filter="Data-Analytics">Data Analytics</li>
+          </ul>
+          <div class="project">
+            <div class="itemBox Finance">
+              <a href="https://github.com/isaacshun/fred-db">
+                <div class="proj-container">
+                  <div class="row">
+                    <div class="image">
+                      <img src="img/FRED-DB.JPG">
+                      <div class="details">
+                        <h2>FRED-DB</h2>
+                        <p>A discord bot for plotting and comparing economic statistics</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </article>
-          <article class = "hvr-reveal fade-in">
-            <img src = "img/DMI.png" width = auto height = auto>
-            <div class="article-txt">
-              <h3>Backtests <i class = "fab fa-python"></i></h3>            
-              <p>As a hobby, I performed a few backtests with Jupyter Notebook to test some strategies. Some of the strategies that I tested include:<br><br>Relative Strength Indicator (RSI)<br>Directional Movement Index (DMI)<br><br> Currently working on Ichimoku Clouds.</p><br>
-              <a href="https://github.com/isaacshun/backtests"><i class = "fa fa-github"></i> Github Repository</a>
+            <div class="itemBox Finance">
+              <a href="https://github.com/isaacshun/backtests">
+                <div class="proj-container">
+                  <div class="row">
+                    <div class="image">
+                      <img src="img/DMI.png">
+                      <div class="details">
+                        <h2>Backtests</h2>
+                        <p>A place where I store my backtesting results with different indicators</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </article>
-          <article class = "hvr-reveal fade-in">
-            <img src = "img/Kaggle.JPG" width = auto height = auto>
-            <div class="article-txt">
-              <h3>Kaggle Projects <i class = "fab fa-r-project"></i> <i class = "fab fa-python"></i></h3>            
-              <p>As a hobby, I sometimes take data from Kaggle and perform some data analysis on them. It cures my boredom during the quarantine, and it also hones my analytical skills and problem solving abilities. <br><br> Currently working on Covid's impact on the economy.</p><br>
-              <a href="https://github.com/isaacshun/kaggle-projects"><i class = "fa fa-github"></i> Github Repository</a>
+            <div class="itemBox Data-Analytics">
+              <a href="https://github.com/isaacshun/kaggle-projects">
+                <div class="proj-container">
+                  <div class="row">
+                    <div class="image">
+                      <img src="img/Kaggle.JPG">
+                      <div class="details">
+                        <h2>Kaggle Projects</h2>
+                        <p>To hone my data analytics skills, I sometimes do data science projects with python and R</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </article>
-        </div>
+          </div>
+        </section>
       </div>
       <section class = "contact" id = "contact">
         <div class="content">
@@ -373,24 +433,6 @@
     </main>
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 500,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".languages"), {
@@ -399,6 +441,24 @@
         glare: true,
         "max-glare": 1,
       });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.proj-list').click(function(){
+          const value = $(this).attr('data-filter');
+          if (value == 'all'){
+            $('.itemBox').show('1000');
+          }
+          else{
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+          }
+        })
+
+        $('.proj-list').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+        })
+      })
     </script>
   </body>
 </html>
