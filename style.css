@@ -985,7 +985,7 @@ body::-webkit-scrollbar-thumb{
   margin: 40px auto;
 }
 
-.section-project .button-group{
+.section-project ul{
   display: flex;
   margin-bottom: 10px;
   margin-left: auto;
@@ -993,7 +993,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: center;
 }
 
-.section-project .button-group button{
+.section-project ul li{
   list-style: none;
   background: #eee;
   padding: 8px 20px;
@@ -1003,7 +1003,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 5px;
 }
 
-.section-project .button-group button.active{
+.section-project ul li.active{
   background: #0388f4;
   color: #fff;
   transition: 0.2s
@@ -1097,9 +1097,10 @@ body::-webkit-scrollbar-thumb{
     height: auto;
   }
 
-  .section-project .button-group{
+  .section-project ul{
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
   .image{
@@ -1111,7 +1112,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 14px;
   }
   
-  .section-project .button-group button{
+  .section-project ul li{
     font-size: 5vw
   }
 
@@ -1410,7 +1411,7 @@ body::-webkit-scrollbar-thumb{
 }
 @media (hover: none){
   .info{
-    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/city.jpg) no-repeat center center scroll;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1437,7 +1438,7 @@ body::-webkit-scrollbar-thumb{
 
 @media (pointer: coarse){
   .info{
-    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/newyorkmin.jpg) no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),url(img/city.jpg) no-repeat center center scroll;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
